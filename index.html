@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>
+        Registration Form
+    </h1>
+    <div class="container">
+
+        <!-- onsubmit="return validateForm()" method="POST" -->
+        <form action="" name="myform" method="POST" onsubmit="return validateform()">
+            <p id="idpara"></p>
+            <label for=""> User id : </label> <input type="text" id="userid" name="userid"> <br><br>
+
+            <p id="passpara"></p>
+            <label for="">Password:</label> <input type="text" id="password" name="password"><br><br>
+            <p id="namepara"></p>
+            <label for="">Name:</label> <input type="text" id="name" name="name"><br><br>
+
+            <label for="">Address :</label> <input type="text" id="address" placeholder="Optional"><br><br>
+            <p id="countrypara"></p>
+            <label for="country">Country :</label>
+            <select id="country" name="country">
+                <option selected value="country select">(Please select a country)</option>
+                <option class="countries" value="pakistan">Pakistan</option>
+                <option class="countries" value="india">India</option>
+                <option class="countries" value="us">US</option>
+
+            </select> <br> <br>
+
+
+            <p id="zippara"></p>
+            <label for="">Zip code:</label>
+            <input type="text" id="zipcode" name="zipcode"><br><br>
+
+
+            <p id="emailpara"></p>
+            <label for="">Email :</label>
+            <input type="text" id="email" name="email"><br><br>
+
+            <p id="genderpara"></p>
+            <label for="">Gender:</label>
+            <input type="radio" name="gender" id="male" value="male">Male <input type="radio" name="gender" id="female"
+                value="female">Female<br><br>
+
+            <p id="langpara"></p>
+            <label for="">Language:</label>
+            <input type="checkbox" name="language" id="english" value="English">English
+            <input type="checkbox" name="language" id="nonEnglish" value="Non English">Non English<br><br>
+
+            <label for="textarea">About:</label><textarea name="textbox" id="about" cols="30" rows="10"
+                placeholder="Optional"></textarea><br><br>
+
+            <button>Submit</button>
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

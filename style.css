@@ -1,0 +1,28 @@
+.container
+{
+
+    width: 500px;
+    clear: both;
+}
+label{
+    display: block;
+    float: left;
+    width : 100px;    
+  }
+ #country 
+ { 
+     height: 30px;
+ }
+ button
+ {
+     margin-left: 20%;
+ }
+  p small
+  {
+      color: red;
+      margin-left: 20%; margin-bottom: 0%; padding-bottom: 0%;
+  }
+  p{
+      margin: 0px;
+      padding: 0px;
+  }
